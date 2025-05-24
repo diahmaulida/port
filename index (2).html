@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project 1</title>
+    <style>
+      .logo {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(/images/);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1 rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2 rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #2c3e50;
+      }
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .skill-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .skill-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(45deg, #ff6b6b, #ffa500);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Bagian header navigasi-->
+    <header>
+      <div>
+        <div class="logo">Diah Maulida</div>
+        <nav class="nav-container">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Skill</a></li>
+            <li><a href="contact.html">Projects</a></li>
+            <li><a href="services.html">Contacs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Section profil-->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Tiwi</h1>
+        <p>Anak informatika</p>
+        <a href="#projects">Project saya</a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skill gw</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Frontend</h3>
+            <p>
+              HTML, CSS, JavaScript, React untuk membangun user interface yang
+              menarik dan responsive.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚙</div>
+            <h3>Backend</h3>
+            <p>
+              Node.js, Express, Database design untuk membangun server-side
+              applications yang robust.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <h3>Mobile</h3>
+            <p>
+              React Native dan Flutter untuk mengembangkan aplikasi mobile
+              cross-platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
