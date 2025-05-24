@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project 1</title>
     <style>
+          <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
       * {
         margin: 0;
         padding: 0;
@@ -22,6 +27,23 @@
         font-size: 2rem;
         font-weight: bold;
       }
+      /* Light gradient background for navbar */
+.navbar {
+  background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%) !important;
+}
+
+/* Override link colors for better visibility on light background */
+.navbar .nav-link,
+.navbar-brand {
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #555 !important;
+}
+
       .nav-container {
         display: flex;
         justify-content: space-between;
@@ -49,7 +71,7 @@
       /* CONTOH 2: Hero Section dengan Centered Content */
       .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url("https://www.google.com/imgres?q=gambar%20minion&imgurl=https%3A%2F%2Fimage.idntimes.com%2Fpost%2F20240713%2Funtitled-767d5ed09037dbc1bc72f2664465066f.png&imgrefurl=https%3A%2F%2Fduniaku.idntimes.com%2Ffilm%2Finternasional%2Fkarakter-minion-paling-menonjol-00-b8vrp-tx5npt&docid=N68_IxXXY8F_mM&tbnid=wFSB465nARLvwM&vet=12ahUKEwijv_T-x7uNAxVo1DgGHX5hN0wQM3oFCIMBEAA..i&w=975&h=525&hcb=2&ved=2ahUKEwijv_T-x7uNAxVo1DgGHX5hN0wQM3oFCIMBEAA");
+          url("https://meramuda.com/wp-content/uploads/2022/07/minion-2-1068x712.jpeg");
         background-size: cover;
         background-position: center;
         height: 60vh;
@@ -366,17 +388,29 @@
   <body>
     <!--Bagian header navigasi-->
     <header>
-      <div>
-        <div class="logo">Diah Maulida</div>
-        <nav class="nav-container">
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Skill</a></li>
-            <li><a href="contact.html">Projects</a></li>
-            <li><a href="services.html">Contacs</a></li>
+              <a class="nav-link" href="contact.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Contacts</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Tiwi</h1>
+        <p>Anak informatika</p>
+        <a href="#projects" class="btn btn-light">Project saya</a>
+      </div>
+    </section>
+    <!-- Remaining sections can be added here -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     </header>
 
     <!--Section profil-->
