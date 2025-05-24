@@ -385,10 +385,8 @@
       }
     </style>
   </head>
-  <body>
-    <!--Bagian header navigasi-->
-    <header>
-<!-- Navbar -->
+  <body id="home">
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark shadow fixed-top"
       style="background-color: #088f8f"
@@ -407,18 +405,24 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Skill</a>
+              <a class="nav-link" href="#home">Home</a>
+            </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Contacts</a>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+              
             </li>
           </ul>
         </div>
